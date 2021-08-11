@@ -52,6 +52,12 @@ source $HOME/data/config/.gitattributes
 gh loguser  # gh auth login --with-token <<< $GITHUB_USER_TOKEN
 gh prfill  # gh pr create --fill --label pr_pull
 open https://github.com/j5pu/homebrew-critic/pull/2  # check status
+# Fix error
+gh pr close 2
+
+git add --all
+git commit --message "fix quotes true"
+git push --set-upstream origin fork
 ```
 
 ## Tips
