@@ -51,6 +51,7 @@ export GH_CONFIG_DIR=$HOME/data/config/git
 source $HOME/data/config/.gitattributes
 gh loguser  # gh auth login --with-token <<< $GITHUB_USER_TOKEN
 gh prfill  # gh pr create --fill --label pr_pull
+open https://github.com/j5pu/homebrew-critic/pull/2  # check status
 ```
 
 ## Tips
