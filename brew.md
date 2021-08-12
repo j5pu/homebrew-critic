@@ -58,7 +58,45 @@ gh pr close 2
 git add --all
 git commit --message "fix quotes true"
 git push --set-upstream origin fork
+open https://github.com/j5pu/homebrew-critic/pull/3  # check status
+# First run tests.yml
+# Second run publish.yml (did not do the merge probably because was a formula !!)
 ```
+
+### Install.
+
+```bash
+brew tap j5pu/critic
+brew install critic
+```
+
+### Test new Tap Release
+[j5pu/critic/.github/workflows/tap-release.yml](https://github.com/j5pu/critic/tree/main/.github/workflows/tap-release.yml)
+```yaml
+asset: critic.zip
+tap: j5pu/homebrew-critic/critic.rb
+template: |
+  class App < Formula
+    desc     "$REPO_DESCRIPTION"
+    homepage "$REPO_WEBSITE"
+    version  "$STABLE_VERSION"
+    url      "$STABLE_ASSET_URL"
+    sha256   "$STABLE_ASSET_SHA256"
+
+      depends_on "bash"
+
+      def install
+        bin.install "critic.sh" => "critic"
+      end
+
+      test do
+        system "true"
+      end
+    end
+```
+
+Make a new release and push, check that tap is updated.
+
 
 ## Tips
 
