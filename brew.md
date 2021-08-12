@@ -156,9 +156,9 @@ end
 ### Brew Releaser
   * [Tap Release](https://github.com/toolmantim/tap-release) - Automatically update Homebrew taps when you publish 
   new releases to GitHub. Built with Probot.
-  * [HomeBrew Git Releaser](https://github.com/egilsster/homebrew-git-releaser) 
 
 ### Taps
+  * [github.com/egilsster/git-releaser tap](https://github.com/egilsster/homebrew-git-releaser) 
   * [yandex-weather-cli Makefile](https://github.com/msoap/yandex-weather-cli/blob/master/README.md) - Man page 
   from README.
   * [msopa tools](https://github.com/msoap/homebrew-tools)
