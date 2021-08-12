@@ -161,7 +161,7 @@ end
   * [github.com/egilsster/git-releaser tap](https://github.com/egilsster/homebrew-git-releaser) 
   * [yandex-weather-cli Makefile](https://github.com/msoap/yandex-weather-cli/blob/master/README.md) - Man page 
   from README.
-  * [msopa tools](https://github.com/msoap/homebrew-tools)
+  * [msoap tools](https://github.com/msoap/homebrew-tools)
   * [mongodb](https://github.com/mongodb/homebrew-brew)
   * [getoptions](https://github.com/ko1nksm/homebrew-getoptions)
   * [pet](https://github.com/knqyf263/homebrew-pet)
